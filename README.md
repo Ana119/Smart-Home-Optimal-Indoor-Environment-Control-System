@@ -729,17 +729,6 @@ Khan, Anam Nawaz, Atif Rizwan, Rashid Ahmad, and Do Hyeun Kim. "An OCF-IoTivity
 enabled smart-home optimal indoor environment control system for energy and 
 comfort optimization." Internet of Things 22 (2023): 100712.
 ```
-
----
-
-### 📄 Abstract
-
-The growing energy demand with diminishing energy resources calls for development of optimal indoor control system through accurate energy and occupant comfort modeling in a smart-home. While some major obstacles faced by smart-home IoT network are heterogeneity and disparate IP frameworks resulting in a connectivity and interoperability issues. In this paper we developed a new Open Connectivity Foundation (OCF) based prediction assisted optimal control framework for optimizing energy consumption and maximizing occupant comfort in smart-home. To the best of our knowledge, we are the first to design a scalable, secure, and inter-operable optimal control solution for smart-home IoT networks.
-
-**Keywords:** Energy management, Edge intelligence, Smart-home, Optimization problems, Inference mechanism, OCF connectivity
-
----
-
 ### 🔗 Links
 
 - **Publisher:** [Elsevier - Internet of Things](https://www.sciencedirect.com/science/article/pii/S2542660523000355)
@@ -885,7 +874,7 @@ sudo ufw allow 22
 - Jeju National University
 - Jeju 63243, Republic of Korea
 
-**Project Repository:** https://github.com/yourusername/ocf-smart-home-optimization
+**Project Repository:** https://github.com/Ana119/ocf-smart-home-optimization
 
 ## 🙏 Acknowledgments
 
@@ -903,15 +892,7 @@ This work was supported by:
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-## 📈 Repository Activity
-
-![GitHub stars](https://img.shields.io/github/stars/yourusername/ocf-smart-home-optimization?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/ocf-smart-home-optimization?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/ocf-smart-home-optimization?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/ocf-smart-home-optimization)
-
----
 
 **Made with ❤️ for sustainable smart homes**
 
-*Last Updated: December 2024*
+*Last Updated: December 2023*
