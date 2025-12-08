@@ -706,21 +706,11 @@ sudo ufw allow 22
 - Ensure RSE plugins are properly installed
 - Try reconnecting: Right-click → Disconnect → Connect
 
-## 📞 Contact
-
-**Dr. Do Hyeun Kim** (Corresponding Author)
-- Email: kimdh@jejunu.ac.kr
-- Department of Computer Engineering
-- Jeju National University
-- Jeju 63243, Republic of Korea
-
-**Project Repository:** https://github.com/Ana119/ocf-smart-home-optimization
-
 ## 🙏 Acknowledgments
 
 This work was supported by:
 
-- **Institute for Information & communications Technology Promotion (IITP)**
+- **Institute for Information & communications Technology Promotion (IITP) Republic of Korea**
   - Grant NO. 2022-0-00980: Cooperative Information Intelligence Framework
   - Grant NO. 2021-0-00188: Open source development for AI-enabled IoT platforms
 
@@ -734,5 +724,3 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDeri
 
 
 **Made with ❤️ for sustainable smart homes**
-
-*Last Updated: December 2023*
