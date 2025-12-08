@@ -615,7 +615,7 @@ POST http://[server-ip]:8080/optimize
 
 ---
 
-### 📖 Citation Formats
+### 📖 Citation
 
 #### APA Citation
 ```
