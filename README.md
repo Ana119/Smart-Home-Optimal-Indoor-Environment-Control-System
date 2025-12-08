@@ -12,7 +12,6 @@ An Open Connectivity Foundation (OCF) based prediction-assisted optimal control 
 - **36.82% Energy Savings** - Significant reduction in HVAC energy consumption
 - **3.36ms Round Trip Time** - Ultra-low latency for real-time control
 - **5s Average Response Time** - Fast actuator control and adjustment
-- **Cohen's κ=0.765** - Substantial inter-rater agreement for thermal comfort prediction
 - **R² > 0.94** - High accuracy in energy and environmental parameter prediction
 
 ## 📋 Table of Contents
