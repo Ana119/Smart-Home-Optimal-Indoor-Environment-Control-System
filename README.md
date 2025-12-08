@@ -61,8 +61,6 @@ Our solution addresses these challenges through:
 
 ## 🏗️ System Architecture
 
-## 🏗️ System Architecture
-
 ### Active Chilled Beam (ACB) System Design
 
 <p align="center">
