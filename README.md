@@ -13,17 +13,6 @@ An Open Connectivity Foundation (OCF) based prediction-assisted optimal control 
 - **3.36ms Round Trip Time** - Ultra-low latency for real-time control
 - **5s Average Response Time** - Fast actuator control and adjustment
 - **R² > 0.94** - High accuracy in energy and environmental parameter prediction
-
-## 🤖 Machine Learning Model Development & Deployment
-
-### Dynamic Inference Model Architecture
-
-<p align="center">
-  <img src="Docs/figures/model-training-deployment.jpg" alt="Model Training and Deployment" width="850"/>
-</p>
-
-**Figure 4: Training and offloading of dynamic inference model to provide edge intelligence**
-
 ---
 
 ## 🎯 Overview
@@ -97,6 +86,17 @@ Where:
 - `Ta` = Air Temperature
 - `Hr` = Relative Humidity  
 - `OF` = Operating Frequency (Fan, Pump, Compressor)
+
+  ## 🤖 Machine Learning Model Development & Deployment
+
+### Dynamic Inference Model Architecture
+
+<p align="center">
+  <img src="Docs/figures/model-training-deployment.jpg" alt="Model Training and Deployment" width="850"/>
+</p>
+
+**Figure 2: Training and offloading of dynamic inference model to provide edge intelligence**
+
 
 ## 🔧 Installation
 
