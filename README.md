@@ -14,22 +14,17 @@ An Open Connectivity Foundation (OCF) based prediction-assisted optimal control 
 - **5s Average Response Time** - Fast actuator control and adjustment
 - **R² > 0.94** - High accuracy in energy and environmental parameter prediction
 
-## 📋 Table of Contents
+## 🤖 Machine Learning Model Development & Deployment
 
-- [Overview](#overview)
-- [Features](#features)
-- [System Architecture](#system-architecture)
-- [Installation](#installation)
-- [Hardware Requirements](#hardware-requirements)
-- [Software Requirements](#software-requirements)
-- [Setup Guide](#setup-guide)
-- [Usage](#usage)
-- [Results](#results)
-- [API Documentation](#api-documentation)
-- [Publication](#publication)
-- [Contributing](#contributing)
-- [Citation](#citation)
-- [License](#license)
+### Dynamic Inference Model Architecture
+
+<p align="center">
+  <img src="Docs/figures/model-training-deployment.jpg" alt="Model Training and Deployment" width="850"/>
+</p>
+
+**Figure 4: Training and offloading of dynamic inference model to provide edge intelligence**
+
+---
 
 ## 🎯 Overview
 
@@ -77,62 +72,31 @@ Our solution addresses these challenges through:
 
 ## 🏗️ System Architecture
 
-### Architecture of the Proposed Model
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                     Smart Home Environment                       │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
-│  │   Sensors    │  │ ACB System   │  │  Smart Meter │          │
-│  │ (Temp, Hum)  │  │ (Fan, Pump,  │  │              │          │
-│  │              │  │  Compressor) │  │              │          │
-│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘          │
-│         │                  │                  │                   │
-│         └──────────────────┼──────────────────┘                   │
-│                            │                                      │
-│                   ┌────────▼────────┐                            │
-│                   │  IoT Device     │                            │
-│                   │  (Raspberry Pi) │                            │
-│                   │  Ubuntu 20.04   │                            │
-│                   │  ┌────────────┐ │                            │
-│                   │  │ OCF Server │ │                            │
-│                   │  │IoTivity 2.2│ │                            │
-│                   │  └────────────┘ │                            │
-│                   │  ┌────────────┐ │                            │
-│                   │  │  TFLite    │ │                            │
-│                   │  │  Models    │ │                            │
-│                   │  └────────────┘ │                            │
-│                   └────────┬────────┘                            │
-└────────────────────────────┼─────────────────────────────────────┘
-                             │
-                             │ SSH/Putty/WinSCP
-                             │
-                    ┌────────▼────────┐
-                    │  AIoT Platform  │
-                    │   Windows/Linux │
-                    │  ┌────────────┐ │
-                    │  │Eclipse IDE │ │
-                    │  │Remote Shell│ │
-                    │  └────────────┘ │
-                    │  ┌────────────┐ │
-                    │  │ OCF Client │ │
-                    │  │ (Java)     │ │
-                    │  └────────────┘ │
-                    │  ┌────────────┐ │
-                    │  │Optimization│ │
-                    │  │  (Python)  │ │
-                    │  └────────────┘ │
-                    │  ┌────────────┐ │
-                    │  │  Database  │ │
-                    │  │   (MySQL)  │ │
-                    │  └────────────┘ │
-                    └────────┬────────┘
-                             │
-                    ┌────────▼────────┐
-                    │ Android Client  │
-                    │  (Monitoring &  │
-                    │   Control App)  │
-                    └─────────────────┘
-```
+## 🏗️ System Architecture
+
+### Active Chilled Beam (ACB) System Design
+
+<p align="center">
+  <img src="Docs/figures/acb-system-schematic.jpg" alt="ACB System Schematic" width="800"/>
+</p>
+
+**Figure 1: Schematic diagram of energy conserving Active Chilled Beam system**
+
+The ACB system consists of:
+- **Air Handling Unit**: Supply fan, air mixer, and cooling coils
+- **Water Chilling Unit**: Compressor, water pump, condenser, evaporator, and expansion valve
+- **Control System**: 
+  - Dynamic prediction models for energy and environmental parameters
+  - PMV-based occupant comfort calculation
+  - Optimization model using improved Firefly Algorithm
+  - Optimal actuator control for ACB components
+
+Energy consumption is modeled as: `E = EC[(Ta, Hr), OF]`
+
+Where:
+- `Ta` = Air Temperature
+- `Hr` = Relative Humidity  
+- `OF` = Operating Frequency (Fan, Pump, Compressor)
 
 ## 🔧 Installation
 
@@ -494,6 +458,18 @@ python optimization_engine.py
 │ ✓ Response Time: 4.8s                       │
 │ ✓ Round Trip Time: 3.2ms                    │
 └─────────────────────────────────────────────┘
+
+```
+## 📱 Mobile Application Interface
+
+### Android Client for User Interaction
+
+<p align="center">
+  <img src="Docs/figures/android-app-interface.jpg" alt="Android App" width="600"/>
+</p>
+
+**Figure 3: Android client for getting occupant preference**
+
 ```
 
 ## 📊 Results
