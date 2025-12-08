@@ -499,50 +499,10 @@ python optimization_engine.py
 
 ## 📊 Results
 
-### Energy Saving Percentage of Proposed Model
-
-#### Comparison: IFA-LSTM vs FA-LSTM
-
-| User Preference (α) | FA-LSTM | IFA-LSTM | Improvement |
-|---------------------|---------|----------|-------------|
-| 0.0 (Comfort Priority) | 6.1% | 9.0% | +2.9% |
-| 0.1 | 15.3% | 15.2% | -0.1% |
-| 0.2 | 18.6% | 19.3% | +0.7% |
-| 0.3 | 21.5% | 25.7% | +4.2% |
-| 0.4 | 22.7% | 27.1% | +4.4% |
-| 0.5 (Balanced) | 25.4% | 30.3% | +4.9% |
-| 0.6 | 27.3% | 32.4% | +5.1% |
-| 0.7 | 27.8% | 34.6% | +6.8% |
-| 0.8 | 28.0% | 35.8% | +7.8% |
-| 0.9 | 29.6% | 36.8% | +7.2% |
-| 1.0 (Energy Priority) | **29.9%** | **36.8%** | **+6.9%** |
-
 **Key Findings:**
 - Maximum energy savings: **36.82%** (at α = 1.0)
 - Average improvement over baseline FA: **7%**
 - Best balanced performance: **30.3%** savings at α = 0.5
-
-### System Performance Metrics
-
-| Metric | Value | Comparison |
-|--------|-------|------------|
-| Average Response Time | 5.0 seconds | - |
-| Round Trip Time (OCF) | **3.36 ms** | 9% faster than OneM2M |
-| Round Trip Time (OneM2M) | 3.69 ms | Baseline |
-| PMV Prediction Accuracy | 73.68% | ASHRAE compliant |
-| Temperature Prediction (R²) | 0.941 (train), 0.83 (test) | High accuracy |
-| Humidity Prediction (R²) | 0.96 (train), 0.95 (test) | High accuracy |
-| Energy Prediction (R²) | 0.942 (train), 0.95 (test) | High accuracy |
-
-### Model Comparison: LSTM vs GRU
-
-| Parameter | LSTM (Train/Test) | GRU (Train/Test) | Winner |
-|-----------|-------------------|------------------|--------|
-| Temperature R² | 0.941 / 0.83 | 0.92 / 0.82 | **LSTM** |
-| Humidity R² | 0.96 / 0.95 | 0.63 / 0.64 | **LSTM** |
-| Energy R² | 0.942 / 0.95 | 0.89 / 0.90 | **LSTM** |
-
-## 📡 API Documentation
 
 ### OCF Server Endpoints
 
@@ -707,28 +667,6 @@ https://doi.org/10.1016/j.iot.2023.100712
   url={https://www.sciencedirect.com/science/article/pii/S2542660523000355}
 }
 ```
-
-#### IEEE Citation
-```
-A. N. Khan, A. Rizwan, R. Ahmad, and D. H. Kim, "An OCF-IoTivity enabled 
-smart-home optimal indoor environment control system for energy and comfort 
-optimization," Internet of Things, vol. 22, p. 100712, 2023, 
-doi: 10.1016/j.iot.2023.100712.
-```
-
-#### MLA Citation
-```
-Khan, Anam Nawaz, et al. "An OCF-IoTivity enabled smart-home optimal indoor 
-environment control system for energy and comfort optimization." Internet of 
-Things 22 (2023): 100712.
-```
-
-#### Chicago Citation
-```
-Khan, Anam Nawaz, Atif Rizwan, Rashid Ahmad, and Do Hyeun Kim. "An OCF-IoTivity 
-enabled smart-home optimal indoor environment control system for energy and 
-comfort optimization." Internet of Things 22 (2023): 100712.
-```
 ### 🔗 Links
 
 - **Publisher:** [Elsevier - Internet of Things](https://www.sciencedirect.com/science/article/pii/S2542660523000355)
@@ -736,15 +674,6 @@ comfort optimization." Internet of Things 22 (2023): 100712.
 - **PDF:** [Download from Publisher](https://www.sciencedirect.com/science/article/pii/S2542660523000355/pdfft)
 
 ---
-
-### 📊 Publication Metrics
-
-- **Received:** 10 October 2022
-- **Revised:** 4 January 2023
-- **Accepted:** 1 February 2023
-- **Available online:** 9 February 2023
-- **Article Number:** 100712
-- 
 ## 🌐 Languages
 
 - **Java:** 51.8% (OCF Client, Eclipse IDE integration)
